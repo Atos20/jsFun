@@ -27,11 +27,13 @@ const kittyPrompts = {
 
     // Return an array of just the names of kitties who are orange e.g.
     // ['Tiger', 'Snickers']
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    const result = kitties.filter(kitten => kitten.color === 'orange')
+      .map(orangeCat => orangeCat.name );
     return result;
 
     // Annotation:
-    // Write your annotation here as a comment
+    // iterate through the kitties array and filter for the the orange cats 
+
   },
 
   sortByAge() {
